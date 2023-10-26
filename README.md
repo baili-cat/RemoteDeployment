@@ -1,6 +1,19 @@
-# RemoteDeployment 主要功能
-## 支持ssh连接远程执行命令，已兼容linux、unix、windows；
-## 支持docker安装部署以及启动，支持修改docker-compose配置文件、动态修改docker暴露端口；
-## 支持各类中间件mysql、zk、kafka、neo4j等部署以及nodeexport挂载；
-## 支持apollo配置更新；
-# 其他功能自行发现以及根据需求调整，不再赘述说明；
+# RemoteDeployment
+## 部署支持范围及要求：
+### 操作系统：
+#### linux操作系统，支持安装docker即可
+#### docker构造镜像支持多种，可根据需要自行构建；
+## 部署类型：
+### java应用：常用测试接口、挂载任意探针；
+### 中间件：mysql、redis、zookeeper、kafka任意版本；
+## 部署包格式：
+### 不限：可根据需要自定义改造；
+## JDK版本：
+### OpenJdk：任意版本，支持自己构建；
+## 主要功能：
+### 支持ssh连接远程执行命令，已兼容linux、unix、windows；
+### 支持docker安装部署以及启动，支持修改docker-compose配置文件、动态修改docker暴露端口；
+### 支持各类中间件mysql、zk、kafka、neo4j等部署以及nodeexport挂载；
+### 支持apollo配置更新；
+### 集成了Forest，可根据需要使用发起http请求；
+## 其他功能可自行发现以及根据需求调整，不再赘述说明；非完整版、非标准项目、仅供团队内部提效使用；
